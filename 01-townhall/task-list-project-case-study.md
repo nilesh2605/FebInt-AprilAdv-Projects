@@ -47,6 +47,63 @@ HINT: Complete this like https://github.com/scaleracademy/open-source-projects/d
 
 
 
+##auth
+POST /auth/login
+Login and get auth token
 
+##users
+GET /users
+Get details of all users
 
+GET /users/{userid}
+Get details of given user by userid
 
+POST /users
+Create a new user
+
+PATCH /users/{userid} 🔒
+Update a user
+
+PUT /users/{userid} 🔒
+Update a user
+
+DELETE /users/{userid} 🔒
+Delete a user
+
+##tasks
+GET /users/{userid}/tasks
+Get details of all the tasks for a given user
+
+GET /users/{userid}/tasks/{taskid}
+Get details of a particular task for a given user
+
+POST /users/{userid}/tasks🔒
+Create task
+
+PATCH /users/{userid}/tasks/{taskid}🔒
+Update task
+
+PUT /users/{userid}/tasks/{taskid}🔒
+Update task
+
+DELETE /users/{userid}/tasks/{taskid}🔒
+Update task
+
+##notes
+GET /users/{userid}/tasks/{taskid}/notes
+Get details of all the notes for a given task of a user.
+
+GET /users/{userid}/tasks/{taskid}/notes/{noteid}
+Get details of a particular note for a given task of a user.
+
+POST /users/{userid}/tasks/{taskid}/notes🔒
+Create note
+
+PATCH /users/{userid}/tasks/{taskid}/notes/{noteid}🔒
+Update note.
+
+PUT /users/{userid}/tasks/{taskid}/notes/{noteid}🔒
+Update note.
+
+DELETE /users/{userid}/tasks/{taskid}/notes/{noteid}🔒
+Delete note.
